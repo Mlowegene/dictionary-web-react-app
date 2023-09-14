@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .nav {
@@ -35,7 +35,7 @@
   font-weight: 700;
   font-size: large;
   border: none;
-  /* margin-left: auto; */
+  outline: none;
   background-color: #fff;
 }
 
@@ -58,7 +58,7 @@
   flex-shrink: 0;
   border-radius: 16px;
   background-color: #f4f4f4;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -76,4 +76,174 @@
 
 .search-icon {
   padding: 15px;
+}
+
+.info-section {
+  width: 736px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.heading-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: #2d2d2d;
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.speech {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  color: #a445ed;
+  margin-top: 10px;
+}
+
+.play-icon {
+  margin-top: 25px;
+}
+
+.play-icon button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.noun {
+  display: inline-flex;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.noun p {
+  color: #2d2d2d;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.noun hr {
+  width: 656px;
+  background-color: #e9e9e9;
+}
+
+.meaning-section h4 {
+  color: #757575;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.meaning-section ul li {
+  color: #2d2d2d;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.synonyms {
+  margin-top: 30px;
+}
+
+.synonyms p {
+  color: #757575;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.synonyms p > span {
+  color: #a445ed;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.verb {
+  display: inline-flex;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  flex-shrink: 0;
+}
+
+.verb h4 {
+  color: #2d2d2d;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.verb hr {
+  width: 656px;
+  background-color: #e9e9e9;
+}
+
+.verb-meaning p {
+  color: var(--757575, #757575);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.verb-meaning ul li {
+  color: #2d2d2d;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.verb-meaning ul > p {
+  color: #757575;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer p, a {
+  color: #757575;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.footer a {
+  color: #2D2D2D;
+  margin-left: 20px;
+}
+
+.footer img {
+  width: 12px;
+height: 12px;
+flex-shrink: 0;
 }

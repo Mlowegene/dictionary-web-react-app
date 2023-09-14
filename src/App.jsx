@@ -1,6 +1,7 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { SearchBar } from "./components/SearchBar";
+import { Info} from "./components/Info";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="container">
         <NavBar />
         <SearchBar />
+        <Info />
       </div>
     </>
   );
