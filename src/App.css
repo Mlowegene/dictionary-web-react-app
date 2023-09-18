@@ -7,13 +7,15 @@
 /* font-family: 'Inconsolata', monospace; */
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .nav {
@@ -72,6 +74,11 @@
   outline: none;
   font-size: x-large;
   font-weight: bold;
+}
+
+.search-bar button {
+  border: none;
+  cursor: pointer;
 }
 
 .search-icon {
