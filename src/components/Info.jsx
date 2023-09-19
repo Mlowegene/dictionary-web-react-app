@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 export const Info = ({ meaning }) => {
   const playAudio = () => {
     const audioUrl = meaning[0].phonetics[0].audio;
-    console.log(audioUrl);
     const audio = new Audio(audioUrl);
     audio.play();
   };

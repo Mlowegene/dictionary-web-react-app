@@ -13,7 +13,6 @@ function App() {
       `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
     );
     const data = await response.json();
-    console.log(data);
     setMeaning(data);
   };
 
