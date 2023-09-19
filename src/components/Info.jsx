@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export const Info = ({ meaning }) => {
   const playAudio = () => {
-    const audioUrl = meaning[0].phonetics[1].audio;
+    const audioUrl = meaning[0].phonetics[0].audio;
     console.log(audioUrl);
     const audio = new Audio(audioUrl);
     audio.play();
@@ -15,7 +15,7 @@ export const Info = ({ meaning }) => {
       <div className="heading-section">
         <div className="title">
           <h1 className="heading">{meaning && meaning[0].word}</h1>
-          <p className="speech">{meaning && meaning[0].phonetics[1].text}</p>
+          <p className="speech">{meaning && meaning[0].phonetics[0].text}</p>
         </div>
         <div className="play-icon">
           <button onClick={playAudio}>
@@ -69,7 +69,7 @@ export const Info = ({ meaning }) => {
                 <p>Meaning</p>
             }
           <ul>
-          {meaning && meaning[0].meanings[1].definitions.map((definition, index) =>(
+          {meaning && meaning[0].meanings[0].definitions.map((definition, index) =>(
                 <li key={index}>{definition.definition}</li>
             ))}
           </ul>
