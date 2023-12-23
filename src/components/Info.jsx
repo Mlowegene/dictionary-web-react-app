@@ -17,11 +17,11 @@ export const Info = ({ meaning }) => {
           <p className="speech">{meaning && meaning[0].phonetics[0].text}</p>
         </div>
         <div className="play-icon">
-          <button onClick={playAudio}>
+          <span onClick={playAudio}>
             {meaning && 
             <img src={playIcon} alt="play-icon" />
             }
-          </button>
+          </span>
         </div>
       </div>
       <>
@@ -74,7 +74,7 @@ export const Info = ({ meaning }) => {
           </ul>
         </div>
       </>
-      {meaning && <hr />}
+      {meaning && <hr className='cross-line' />}
       <div className="footer">
         {meaning &&
             <p>Source</p>
