@@ -16,25 +16,25 @@ function App() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const fetchUserData = async () => {
-    const response = await fetch(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
-    );
-    const data = await response.json();
-    setMeaning(data);
-  };
 
   useEffect(() => {
     if(word){
+      const fetchUserData = async () => {
+        const response = await fetch(
+          `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+        );
+        const data = await response.json();
+        setMeaning(data);
+      };
     fetchUserData();
   }
-  }, []);
+  }, [word]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div id={theme} className="container" style={{fontFamily: selectedFont}}>
         <NavBar selectedFont={selectedFont} setSelectedFont={setSelectedFont} />
-        <SearchBar setWord={setWord} fetchUserData={fetchUserData} />
+        <SearchBar setWord={setWord} />
         <Info meaning={meaning} />
       </div>
     </ThemeContext.Provider>
